@@ -35,7 +35,9 @@ public class Variable1 {
     		 sum +=intAry[i];
     	 }
          System.out.println("sum의 값은" + sum);
-    		 
+         System.out.println("sum의 값은" + sum);
+         System.out.println("sum의 값은" + sum);
+
     	
      }
 }
