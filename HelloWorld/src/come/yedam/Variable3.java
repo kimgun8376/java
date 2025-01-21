@@ -15,11 +15,12 @@ public class Variable3 {
 			System.out.print("입금액을 입력>");
             balance = Integer.parseInt(scn.nextLine()); 
 		} else if (num ==2 ) { //출금.
-			
+			System.out.print("출금액을 입력>");
+            balance = Integer.parseInt(scn.nextLine()); 
 		} else if (num ==3 ) { //잔액조회.		     		
 		   System.out.printf("현재 잔액은 %d입니다.\n", balance);
 		} else if (num ==4 ) { //종료.		
-      	
+      	   elrat()
 		}
 		
 		}
