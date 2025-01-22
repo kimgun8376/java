@@ -29,7 +29,7 @@ public class Todo2 {
 				}
 				break;
 
-			case 2: //입
+			case 2: //입dddd
 				System.out.print("정보입력> ex) 홍길동,010-1111-2222,남");
 				
 			case 3:
