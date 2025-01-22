@@ -29,8 +29,9 @@ public class Todo2 {
 				}
 				break;
 
-			case 2:
-				System.out.print("정보입력> ex) 홍길동,010-1111-2222,남")
+			case 2: //입
+				System.out.print("정보입력> ex) 홍길동,010-1111-2222,남");
+				
 			case 3:
 				System.out.println("성별을 입력하세요.");
 				String search = scn.nextLine();
