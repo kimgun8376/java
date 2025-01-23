@@ -15,6 +15,7 @@ public class Variable3 {
 		
 		if(num ==1) { //입금.
 			System.out.print("입금액을 입력>");
+<<<<<<< HEAD
 			money = Integer.parseInt(scn.nextLine());
             if (balance + money > 100000) {
             	System.out.print("금액초과입니다..");
@@ -32,11 +33,21 @@ public class Variable3 {
             	balance -= money;
             	System.out.print("출금완료.");
             }
+=======
+            balance = Integer.parseInt(scn.nextLine()); 
+		} else if (num ==2 ) { //출금.
+			System.out.print("출금액을 입력>");
+            balance = Integer.parseInt(scn.nextLine()); 
+>>>>>>> refs/remotes/origin/master
 		} else if (num ==3 ) { //잔액조회.		     		
 		   System.out.printf("현재 잔액은 %d입니다.\n", balance);
 		} else if (num ==4 ) { //종료.		
+<<<<<<< HEAD
 			System.out.print("프로그램을 종료합니다.");
 		     break;
+=======
+      	   elrat()
+>>>>>>> refs/remotes/origin/master
 		}
 		
 		
