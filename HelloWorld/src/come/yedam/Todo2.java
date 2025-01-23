@@ -191,7 +191,7 @@ public class Todo2 {
 
 			default:
 
-				System.out.println("메뉴를 다시 선택하세요");
+				System.out.println("메뉴를 다시 ㄴ선택하세요");
 
 				break;
 
