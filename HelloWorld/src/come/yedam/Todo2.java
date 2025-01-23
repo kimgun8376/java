@@ -183,7 +183,7 @@ public class Todo2 {
 
 			case 0:
 
-				System.out.println("종료되었습니다.");
+				System.out.println("종료되었습ㅇ니다.");
 
 				_run = false;
 
