@@ -15,7 +15,7 @@ public class ForLoopExe1 {
 
 		while (run) {
 			System.out.println("1.학생점수 입력 2.최고점수 3.평균,합계접수 5.종료"); // 제목
-			System.out.print("선택하세요>"); // 선택란
+	s		System.out.print("선택하세요>"); // 선택란
 			int menu = Integer.parseInt(scn.nextLine());
 
 			switch (menu) {
