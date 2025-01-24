@@ -1,6 +1,6 @@
-package com.yedam;
+package come.yedam;
 
-import com.yedam.reference.ReferenceExe1;
+import come.yedam.ReferenceExe1;
 
 public class ReferenceExe {
 	public static void main(String[] args) {

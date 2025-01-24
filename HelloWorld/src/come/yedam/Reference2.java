@@ -1,4 +1,4 @@
-package com.yedam.reference;
+package come.yedam;
 
 public class Reference2 {
 
