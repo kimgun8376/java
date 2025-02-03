@@ -1,4 +1,4 @@
-package 123;
+package come.yedam.reference;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -109,7 +109,7 @@ public class BoardExe {
 				System.out.println("등록완료");
 				break; // 한건만 등록.
 			}
-		}
+		}  
 	} // end of addBoard().
 
 	// 글삭제. 글제목을 입력 => 삭제는 null 대입하면 삭제.
