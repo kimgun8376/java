@@ -1,81 +1,72 @@
 package come.yedam.Rerence;
 
 /*
- * 도서명,저자,출판사,판매가격 
- * 
-*/ // 1.전체목록 2.도서등록 3.조회(출판사) 9.종료  
-
+ * << 도서명, 저자, 출판사, 판매가격 >>
+ */
 public class Book {
-	// 필드
-	private String BookName;
-	private String writer;
-	private String publisher;
-	private int salesprice;
+	// 필드.
+	private String bookTitle;
+	private String bookAuthor;
+	private String bookPress;
+	private int bookPrice;
 
 	// public, default, private => 접근제한자(access modifier)
-
-	// 생성자
-	Book() {
-	}
-
-	Book(String BookName, String writer, String publisher, int salesprice) {
-		this.BookName = BookName;
-		this.writer = writer;
-		this.publisher = publisher;
-		this.salesprice = salesprice;
+	// 생성자.
+	public Book(String bookTitle, String bookAuthor, String bookPress, int bookPrice) {
+		this.bookTitle = bookTitle;
+		this.bookAuthor = bookAuthor;
+		this.bookPress = bookPress;
+		this.bookPrice = bookPrice;
 	}
 
 	// 제목, 저자, 가격
-	String showBookInfo() {
-		return BookName + " " + writer + " " + publisher + " " + salesprice;
+	public String showBookInfo() {
+		return bookTitle + "  " + bookAuthor + "  " + bookPrice;
 	}
 
-	void showDetailInfo() {
-		// 도서명 :이것이 자바다 출판사 : 한빛미디어
-		// 저 자 : 신용권 가 격 : 25000원
-		String strFormat = "도서명: %10s\t출판사: %6s\n 저 자 : %3s\t\t 가 격: %5d 원\n"; // 변수 선언
-		System.out.printf("", BookName, writer, publisher, salesprice);
+	public void showDetailInfo() {
+		// 도서명: 이것이 자바다 출판사: 한빛미디어
+		// 저 자: 신용권 가 격: 25000 원
+		String strFormat = " 도서명: %10s\t출판사: %6s\n 저 자: %3s\t\t가 격: %5d 원\n";
+		System.out.printf(strFormat, bookTitle, bookPress, bookAuthor, bookPrice);
 	}
 
 	// setter.
-	void setBookprice(int bookprice) {
-		if (salesprice < 0) {
-			this.salesprice = 0;
+	public void setBookPrice(int bookPrice) {
+		if (bookPrice < 0) {
+			this.bookPrice = 0;
 			return;
 		}
-		this.salesprice = salesprice;
+		this.bookPrice = bookPrice;
 	}
 
-	public void BookName(String BookName) {
-		this.BookName = BookName;
+	public void setBookTitle(String bookTitle) {
+		this.bookTitle = bookTitle;
 	}
 
-	public void writer(String writer) {
-		this.BookName = writer;
+	public void setBookAuthor(String bookAuthor) {
+		this.bookAuthor = bookAuthor;
 	}
 
-	public void publisher(String publisher) {
-		this.BookName = publisher;
+	public void setBookPress(String bookPress) {
+		this.bookPress = bookPress;
 	}
 
-	public void salesprice(String salesprice) {
-		this.BookName = salesprice;
+	// getter.
+	public String getBookTitle() {
+		return bookTitle;
 	}
 
-//getter.
-	public String BookName() {
-		return BookName;
+	public String getBookAuthor() {
+		return bookAuthor;
 	}
 
-	public String writer() {
-		return BookName;
+	public String getBookPress() {
+		return bookPress;
 	}
 
-	public String publisher() {
-		return BookName;
+	public int getBookPrice() {
+		return bookPrice;
 	}
 
-	public String salesprice() {
-		return BookName;
-	}
 }

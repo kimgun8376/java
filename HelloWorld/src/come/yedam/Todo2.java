@@ -183,7 +183,7 @@ public class Todo2 {
 
 			case 0:
 
-				System.out.println("종료되었습ㅇ니다.");
+				System.out.println("종료되었습니다.");
 
 				_run = false;
 
@@ -191,7 +191,7 @@ public class Todo2 {
 
 			default:
 
-				System.out.println("메뉴를 다시 ㄴ선택하세요");
+				System.out.println("메뉴를 다시 선택하세요");
 
 				break;
 

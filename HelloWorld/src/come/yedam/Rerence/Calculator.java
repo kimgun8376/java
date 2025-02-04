@@ -1,5 +1,6 @@
 package come.yedam.Rerence;
 
+
 public class Calculator {
 	// 1월달 출력.
 	public void showCalendar() {
@@ -29,12 +30,28 @@ public class Calculator {
 		}
 	} // end of showCalendar().
 
-	public Book getBookInfo(String btitle, Book[] bookAry) {
-//		Book[] bookRepo = { new Book("이것이 자바다", "신용권", "한빛미디어", 10000)//
-//				, new Book("자바스크립트기초", "김자바", "자바출판사", 15000)//
-//				, new Book("혼자공부하는자바", "혼공자", "한빛미디어", 20000)//
-//		};
-		// 배열검색.
+	// Book 클래스 정의.
+	class Book {
+		private String title;
+		private String author;
+		private String publisher;
+		private int price;
+
+		// 생성자.
+		public Book(String title, String author, String publisher, int price) {
+			this.title = title;
+			this.author = author;
+			this.publisher = publisher;
+			this.price = price;
+		}
+
+		public String getBookTitle() {
+			return title;
+		}
+	}
+
+	// 책 정보 검색.
+	public Book getBookInfo(String btitle,Book[] bookAry) {
 		for (int i = 0; i < bookAry.length; i++) {
 			if (bookAry[i].getBookTitle().equals(btitle)) {
 				return bookAry[i];
@@ -52,19 +69,12 @@ public class Calculator {
 		return result;
 	}
 
-	// 두 숫자중에서 큰 값을 반환.
+	// 두 숫자 중에서 큰 값을 반환.
 	public int getMax(int num1, int num2) {
 		return num1 > num2 ? num1 : num2;
-//		if (num1 > num2) {
-//			return num1;
-//		}
-//		return num2;
 	}
 
-	// *
-	// **
-	// ***
-	// ****
+	// 별 출력 예시: 1줄씩 별 출력.
 	public void printStar(int times) {
 		for (int i = 1; i <= times; i++) {
 			printStar(i, "*");
@@ -72,7 +82,7 @@ public class Calculator {
 		}
 	}
 
-	// 별 출력하는 메소드.
+	// 별 출력하는 메소드 (매개변수로 유형 설정).
 	public void printStar(int times, String types) { // 매개변수.
 		for (int i = 1; i <= times; i++) {
 			System.out.print(types);
@@ -89,6 +99,7 @@ public class Calculator {
 		return num1 + num2;
 	}
 
+	// 배열의 합을 반환.
 	public int sum(int[] intAry) {
 		int sum = 0;
 		for (int i = 0; i < intAry.length; i++) {

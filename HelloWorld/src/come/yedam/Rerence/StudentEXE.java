@@ -8,9 +8,12 @@ public class StudentEXE {
 
 		Student[] students = new Student[5];
 
+		//상수선언 final.
 		Student std1 = new Student("홍길동", 80); // 인스턴스 생성.
 		std1.mathScore = 85;
-
+        std1.mathScore = 77;
+		std1.gender = Gender.MEN;
+ 
 		Student std2 = new Student();
 		std2.studentName = "김민수";
 		std2.engScore = 85;
@@ -35,10 +38,11 @@ public class StudentEXE {
 
 		for (int i = 0; i < students.length; i++) {
 			if (students[i] != null //
-					&& students[i].studentName.equals(studName)) {
-
-				System.out.printf("학생의 평균은 %.2f입니다.\n"//
-						, students[i].getAverage());
+				/*	&& students[i].studentName.equals(studName))*/  
+                     && students[i].gender == Gender.MEN) {
+				     students[i].printInfo();
+				/*System.out.printf("학생의 평균은 %.2f입니다.\n"//
+						, students[i].getAverage()); */
 			}
 //			if (students[i] != null && students[i].getAverage() >= 85) {
 //				students[i].printInfo();
