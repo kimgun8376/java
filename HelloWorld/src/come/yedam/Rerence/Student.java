@@ -17,13 +17,13 @@ public class Student {
 		
 	}
 
-	Student(String studentName, int engScore, int mathScore) {
+	public Student(String studentName, int engScore, int mathScore) {
 		this.mathScore = mathScore;
 		this.engScore = engScore;
 		this.studentName = studentName;
 	}
 
-	Student(String studentName, int engScore, int mathScore, String gender){
+	public Student(String studentName, int engScore, int mathScore, String gender){
 		this.mathScore = mathScore;
 		this.engScore = engScore;
 		this.studentName = studentName;

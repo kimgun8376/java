@@ -51,15 +51,19 @@ public class Calculator {
 	}
 
 	// 책 정보 검색.
-	public Book getBookInfo(String btitle,Book[] bookAry) {
-		for (int i = 0; i < bookAry.length; i++) {
-			if (bookAry[i].getBookTitle().equals(btitle)) {
-				return bookAry[i];
+	public come.yedam.Rerence.Book getBookInfo(String btitle, come.yedam.Rerence.Book[] bookRepository) {
+//		Book[] bookRepo = { new Book("이것이 자바다", "신용권", "한빛미디어", 10000)//
+//				, new Book("자바스크립트기초", "김자바", "자바출판사", 15000)//
+//				, new Book("혼자공부하는자바", "혼공자", "한빛미디어", 20000)//
+//		};
+		// 배열검색.
+		for (int i = 0; i < bookRepository.length; i++) {
+			if (bookRepository[i].getBookTitle().equals(btitle)) {
+				return bookRepository[i];
 			}
 		}
 		return null;
 	}
-
 	// 1 ~ 100 사이의 임의값을 n개 반환.
 	public int[] randomAry(int n) {
 		int[] result = new int[n];

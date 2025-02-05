@@ -1,6 +1,6 @@
 package come.yedam.inheritance;
 
-public class MysqlDao {
+public class MysqlDao extends Dao {
      public void register() {
     	 System.out.println("등록가능.");
      }
