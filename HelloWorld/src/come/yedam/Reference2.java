@@ -14,7 +14,7 @@ public class Reference2 {
 		String[] temp = { "", "0" };
 		for (int i = 0; i < scores.length; i++) {
 			System.out.println("점수=> " + scores[i][1]);
-			// sum에 값을 누적.
+			// sum에 값을 누적
 			sum = sum + Integer.parseInt(scores[i][1]);
 			// 최고점수를 받은 학생.
 			if (Integer.parseInt(temp[1]) //

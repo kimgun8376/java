@@ -52,7 +52,7 @@ public class EmpListExe implements EmpDAO {
 			}
 		}
 		return false; // 수정못함.
-	}
+	} // end of modifyEmp.
 
 	@Override
 	public boolean removeEmp(int empNo) {
@@ -67,20 +67,25 @@ public class EmpListExe implements EmpDAO {
 	}
 
 	@Override
-	public Employee[] search(Employee emp) { // sal보다 급여가 많은.
-		Employee[] result = new Employee[10];
-		int idx = 0;
-        int salary = emp.getSalary(); // salary 필드
-		String name = emp.getEmpName();
-		for (int i = 0; i < empList.size(); i++) {
-			if (empList.get(i).getEmpName().indexOf(name) >- 1){
-		//	if (empList.get(i).getEmpName().indexOf(emp.getEmpName()) > -1); // 정해진 글자 수 입력.					
-				result[idx] = empList.get(i);
-				idx++;// 0부터1씩 증가되도록.
-			}
-		}
+	public Employee[] search(Employee emp) { // 급여가 더 많은 사원 검색
+	    List<Employee> result = new ArrayList<>();  // 결과를 저장할 리스트
+	    int salary = emp.getSalary(); // 검색할 급여
+	    String name = emp.getEmpName(); // 검색할 이름
+	    
+	    for (int i = 0; i < empList.size(); i++) {
+	        Employee currentEmp = empList.get(i);  // empList에서 사원 가져오기
+	        // 이름이 포함되고 급여가 더 많은 경우
+	        if (currentEmp != null && currentEmp.getEmpName().contains(name) && currentEmp.getSalary() > salary) {
+	            result.add(currentEmp);  // 조건에 맞는 사원 추가
+	        }
+	    }
 
-		return result;
+	    // 리스트를 배열로 변환하여 반환
+	    return result.toArray(new Employee[0]);
+	}
+	private Employee employees(int i) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override
