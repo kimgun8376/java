@@ -13,7 +13,8 @@ import come.yedam.Rerence.Student;
  */
 public class Exe {
 	public static void main(String[] args) {
-		System.out.println("홍길동".indexOf("길동")); //-1보다 큰값.
+		System.out.println("홍길동".indexOf("호")); // -1보다 큰값.
+		
 		
 		
 		// 학생정보를 저장하는 컬렉션(ArrayList) 선언.
@@ -22,6 +23,15 @@ public class Exe {
 		students.add(new Student("홍길동", 80, 83));
 		students.add(new Student("김민수", 84, 87));
 		students.add(new Student("박성용", 79, 91));
+
+		// 삭제.
+		for (int i = 0; i < students.size(); i++) {
+			if (students.get(i).getStudentName().equals("김민수")) {
+				// students[i]
+				students.remove(i);
+				break;
+			}
+		}
 
 		// 출력. 이름만 출력하기.
 		for (int i = 0; i < students.size(); i++) {
