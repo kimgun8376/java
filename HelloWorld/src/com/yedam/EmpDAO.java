@@ -35,7 +35,7 @@ public class EmpDAO {
 		int hdate = 0;
 		String hdate = emp.gethdate();
 		for(int i = 0; i < empList.size(); i++) {
-			if(empList.get(i).gethdate().indxOf(hdate) > -1) {
+			if(empList.get(i).gethdate().indxOf(hdate) > -1) {ddddddd
 				result.add(empList.get(i)); */
 		
 		
