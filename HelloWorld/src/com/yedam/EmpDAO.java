@@ -33,7 +33,7 @@ public class EmpDAO {
 /*	public List<Employee> search(Employee emp) {
 		ArrayList<Employee> result = new ArrayList<Employee>();
 		int hdate = 0;
-		String hdate = emp.gethdate();
+		String hdate = emp.gethdate();25
 		for(int i = 0; i < empList.size(); i++) {
 			if(empList.get(i).gethdate().indxOf(hdate) > -1) {ddddddd
 				result.add(empList.get(i)); */
