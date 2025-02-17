@@ -16,10 +16,10 @@ public class EmpListExe implements EmpDAO {
 	// 생성자.
 	public EmpListExe() {
 		// 초기값.
-		empList.add(new Employee(1001, "홍길동", "432-1234"));
-		empList.add(new Employee(1011, "박길동", "432-1212"));
-		empList.add(new Employee(1021, "김사원", "432-2222"));
-		empList.add(new Employee(1010, "박사장", "333-1212", "2000-01-01", 500));
+		empList.add(new Employee(1001, "홍길동", "432-1234","2000-01-01", 400));
+		empList.add(new Employee(1011, "박길동", "432-1212","2004-02-04", 350));
+		empList.add(new Employee(1021, "김사원", "432-2222","1998-03-07", 700));
+		empList.add(new Employee(1010, "박사장", "333-1212", "1995-04-11", 850));
 	}
 
 	@Override
